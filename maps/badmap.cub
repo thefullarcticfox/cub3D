@@ -1,0 +1,14 @@
+R 	65446	654
+NO 	./textures/northwall_64x64.xpm
+SO 	./textures/southwall_64x64.xpm
+WE 	./textures/westwall_64x64.xpm
+EA 	./textures/eastwall_64x64.xpm
+
+S	./textures/sprite_64x64.xpm
+F	220,	100,	0
+C	225,	30,		0
+
+1111
+1111
+1EE1
+1111
