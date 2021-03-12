@@ -6,7 +6,8 @@ Raycasting algorithm based on [Lode's Computer Graphics Raycasting Tutorial](htt
 Works on Arch Linux
 
 ### Differences from master
-Image needs to be redrawn constantly because X11 clears window if any part of it is not seen on screen. macOS's Cocoa preserves image in window so i don't need to redraw image if i'm standing still in game.
+- Image needs to be redrawn constantly because X11 clears window if any part of it is not seen on screen. macOS's Cocoa preserves image in window so i don't need to redraw image if i'm standing still in game.
+- i'm using [42Paris's minilibx-linux](https://github.com/42Paris/minilibx-linux) submodule so to build you will need to run `git submodule update --init` after checkouting to this branch
 
 ### Build and run
 ```
