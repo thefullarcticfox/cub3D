@@ -1,7 +1,7 @@
 # cub3D
 42 cub3D project
 
-Raycasting project based on [Lode's Computer Graphics Raycasting Tutorial](https://lodev.org/cgtutor/raycasting.html)
+Raycasting algorithm based on [Lode's Computer Graphics Raycasting Tutorial](https://lodev.org/cgtutor/raycasting.html)
 
 Works on macOS 10.14.
 
