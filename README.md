@@ -3,7 +3,10 @@
 
 Raycasting algorithm based on [Lode's Computer Graphics Raycasting Tutorial](https://lodev.org/cgtutor/raycasting.html)
 
-Works on macOS 10.14
+Works on Arch Linux
+
+### Differences from master
+Image needs to be redrawn constantly because X11 clears window if any part of it is not seen on screen. macOS's Cocoa preserves image in window so i don't need to redraw image if i'm standing still in game.
 
 ### Build and run
 ```

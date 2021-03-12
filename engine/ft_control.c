@@ -1,11 +1,5 @@
 #include "cub3d.h"
 
-static int		ft_ismovement(int c)
-{
-	return (c == KEY_W || c == KEY_A || c == KEY_S || c == KEY_D ||
-		c == KEY_LEFT || c == KEY_RIGHT);
-}
-
 static void		ft_move(t_cam *c, t_cfg *f, int dir)
 {
 	double	x;
@@ -81,12 +75,5 @@ int				ft_control(int key, t_mlx *m)
 		ft_rotate(m->cam, -1);
 	if (key == KEY_ESC)
 		ft_exit(m);
-	if (ft_ismovement(key))
-	{
-		ft_render(m);
-		mlx_put_image_to_window(m->mlx, m->wnd, m->frame.img, 0, 0);
-		mlx_destroy_image(m->mlx, m->frame.img);
-		m->frame.img = NULL;
-	}
 	return (0);
 }

@@ -27,6 +27,13 @@ static void		ft_runmlx(t_mlx *m)
 		ft_error(m, 22, NULL);
 	ft_initcam(m);
 	ft_loadtextures(m);
+	m->frame.img = mlx_new_image(m->mlx, m->res_x, m->res_y);
+	if (m->frame.img == NULL)
+		ft_error(m, 19, "Frame render");
+	m->frame.addr = (int *)mlx_get_data_addr(m->frame.img,
+		&m->frame.bpp, &m->frame.size_line, &m->frame.endian);
+	if (m->frame.addr == NULL)
+		ft_error(m, 20, "Frame render");
 	if (m->cfg->bmp)
 		ft_bmp(m);
 	else

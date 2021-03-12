@@ -1,4 +1,5 @@
 #include "cub3d.h"
+#include <sys/stat.h>
 
 static void		ft_itobytes(int num, unsigned char *arr)
 {
@@ -44,8 +45,6 @@ static void		ft_bmpimage(t_mlx *m, int bmpsize)
 			i += 4;
 		}
 	}
-	mlx_destroy_image(m->mlx, m->frame.img);
-	m->frame.img = NULL;
 }
 
 void			ft_bmp(t_mlx *m)
