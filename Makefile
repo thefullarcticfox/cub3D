@@ -19,7 +19,7 @@ MINILIBX = $(MINILIBXDIR)libmlx.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I$(INCLUDEDIR)
 LIBFLAGS = -lm -L$(LIBFTDIR) -lft -L$(MINILIBXDIR) -lmlx
-FRAMEWORKS = -framework OpenGL -framework AppKit -lz
+FRAMEWORKS = -lXext -lX11 -lm -lbsd
 EXECFLAGS = $(CFLAGS) $(LIBFLAGS) $(FRAMEWORKS)
 
 .PHONY: all bonus clean fclean re
