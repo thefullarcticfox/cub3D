@@ -770,5 +770,5 @@ int		mlx_get_screen_size(void *mlx_ptr, int *sizex, int *sizey)
   NSRect rect = [[NSScreen mainScreen] frame];
   *sizex = (int)rect.size.width;
   *sizey = (int)rect.size.height;
-	return (0);
+  return (0);
 }
