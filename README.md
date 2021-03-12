@@ -1,6 +1,8 @@
 # cub3D
 42 cub3D project
 
+Raycasting project based on [Lode's Computer Graphics Raycasting Tutorial](https://lodev.org/cgtutor/raycasting.html)
+
 Works on macOS 10.14.
 
 ### Build and run
@@ -8,8 +10,14 @@ Works on macOS 10.14.
 make
 ./cub3D ./maps/e1m1.cub [--save]
 ```
+> `--save` is an optional parameter to take a bmp screenshot and exit
 
-### Minilibx
+### Controls
+- `W` `A` `S` `D` to walk
+- `<-` `->` to rotate
+- `Esc` to exit
+
+### ./minilibx/
 Slightly modified X11/Cocoa OpenGL library for macOS made by Olivier Crouzet (Ol)
 
 Changes:
