@@ -3,7 +3,7 @@
 
 Raycasting algorithm based on [Lode's Computer Graphics Raycasting Tutorial](https://lodev.org/cgtutor/raycasting.html)
 
-Works on macOS 10.14
+Works on macOS 10.14. For linux version check out `linuxport` branch
 
 ### Build and run
 ```
